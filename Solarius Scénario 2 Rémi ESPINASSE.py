@@ -53,16 +53,15 @@ def rot_dpitch(pitch):
     time.sleep(1)
     return(pitch)
 
+pitch = 45
+yaw = 0
+
+global pitch
+global yaw
+
+initial_pos(pitch, yaw)
+
 while True:
-
-    pitch = 45
-    yaw = 0
-
-    global pitch
-    global yaw
-
-    initial_pos(pitch, yaw)
-
     if cpx.light > 0:
         time.sleep(60)
     else:
