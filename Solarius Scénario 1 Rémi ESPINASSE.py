@@ -45,14 +45,11 @@ while True:
     pitch = 45
     yaw = 0
 
-    global pitch
-    global yaw
-
     initial_pos(pitch, yaw)
     while pitch <= 90:
-        forward(pitch, yaw)
+        pitch, yaw = forward(pitch, yaw)
     while yaw <= 180:
-        reverse(pitch, yaw)
+        pitch, yaw = reverse(pitch, yaw)
 
     print("END OF THE TEST")
 
